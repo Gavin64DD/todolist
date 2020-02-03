@@ -14,10 +14,13 @@ function emptyList() {
   alert("Empty button clicked!");
 }
 var saveButton = document.getElementById("save-button");
-saveButton.addEventListener("click", saveList);
+// saveButton.addEventListener("click", saveList);
 function saveList() {
   alert("Save button clicked!");
 }
+
+setInterval(saveList, 1000)
+
 var toDoEntryBox = document.getElementById("todo-entry-box");
 var toDoList = document.getElementById("todo-list");
 function newToDoItem(itemText, completed) {
